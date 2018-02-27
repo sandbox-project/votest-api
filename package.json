@@ -1,0 +1,43 @@
+{
+  "name": "votest-api",
+  "version": "0.1.0",
+  "description": "Server side for votest-app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MVolodya/votest-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MVolodya/votest-api/issues"
+  },
+  "homepage": "https://github.com/MVolodya/votest-api#readme",
+  "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.32",
+    "body-parser": "^1.18.2",
+    "compression": "^1.7.2",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.2",
+    "firebase-admin": "^5.9.0",
+    "helmet": "^3.11.0",
+    "socket.io": "^2.0.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.32",
+    "@babel/plugin-transform-runtime": "^7.0.0-beta.32",
+    "@babel/preset-env": "^7.0.0-beta.32",
+    "babel-loader": "^8.0.0-beta.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "clean-webpack-plugin": "^0.1.17",
+    "morgan": "^1.9.0",
+    "nodemon-webpack-plugin": "^0.1.5",
+    "uglifyjs-webpack-plugin": "^1.1.0",
+    "webpack": "^3.8.1",
+    "webpack-merge": "^4.1.1",
+    "webpack-node-externals": "^1.6.0"
+  }
+}

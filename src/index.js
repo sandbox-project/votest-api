@@ -25,7 +25,7 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.use("/api/v1", pollRoutes);
+app.use("/api", pollRoutes);
 
 server.listen(PORT, err => {
   if (err) {

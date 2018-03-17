@@ -1,9 +1,12 @@
 import * as admin from "firebase-admin";
-import serviceAccount from "../config/serviceAccountKey.json";
 require('dotenv').config();
 
 admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
+  credential: admin.credential.cert({
+    projectId: process.env.PROJECT_ID,
+    clientEmail: process.env.CLIENT_EMAIL,
+    privateKey: process.env.PRIVATE_KEY
+  }),
   databaseURL: process.env.DATABASE_URL
 });
 
